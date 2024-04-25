@@ -5,12 +5,15 @@ function handleOnLoad(){
 function handleOnChange()
 {
     const selectedId = document.getElementById("selectListBox").value;
-    bookList.forEach((book)=>{
-        if(book.Id == selectedId)
+    console.log(bookList)
+    bookList.forEach((book)=>
+    {
+        if(book.id == selectedId)
         {
             myBook = book;
         }
     });
+    console.log(myBook)
     populateForm();
 }
 
